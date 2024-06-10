@@ -3,8 +3,10 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const axios = require("axios");
+const dotenv = require('dotenv')
 const dbConnection = require("./config/db");
 const app = express();
+dotenv.config()
 app.use(cors());
 app.use(bodyParser.json());
 
