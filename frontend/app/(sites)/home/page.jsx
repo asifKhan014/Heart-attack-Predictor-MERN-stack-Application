@@ -38,7 +38,7 @@ export default function page() {
             className="rounded-full h-56 w-56"
           />
           <h3 className="text-black text-2xl font-bold hover:text-blue-600 ">
-            Predict Now
+            Patients Record
           </h3>
         </Link>
         <Link
