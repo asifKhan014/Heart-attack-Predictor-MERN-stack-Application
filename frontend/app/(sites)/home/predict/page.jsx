@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import axios from "axios";
+import { HomeIcon, HomeModernIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const Prediction = () => {
   const [userData, setUserData] = useState({
@@ -53,9 +55,16 @@ const Prediction = () => {
 
   return (
     <div className="flex flex-col min-h-screen justify-center items-center bg-cover bg-center bg-custom-bg2">
-      <h1 className="text-4xl text-white font-bold py-4">
-        Heart Attack Predictor
-      </h1>
+      <div className="w-full flex items-center  ">
+        <Link href={'/home'}  className="hover:text-blue-300">
+        <HomeModernIcon className="w-8 h-8 ml-8" />
+        </Link>
+        <div className="w-full text-center">
+          <h1 className="text-4xl text-white font-bold py-4">
+            Heart Attack Predictor
+          </h1>
+        </div>
+      </div>
       <form
         onSubmit={handleSubmit}
         className="grid grid-cols-1 md:grid-cols-3 w-full  gap-4 px-4 py-8"

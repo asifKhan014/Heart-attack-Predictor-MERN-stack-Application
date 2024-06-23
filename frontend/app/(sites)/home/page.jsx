@@ -12,7 +12,7 @@ export default function page() {
       </div>
       <div className="mx-auto w-full flex justify-center items-center gap-8 ">
         <Link
-          href={"/predict"}
+          href={"/home/predict"}
           className="flex flex-col items-center justify-center gap-4 shadow-lg p-8"
         >
           <Image
@@ -27,7 +27,7 @@ export default function page() {
           </h3>
         </Link>
         <Link
-          href={"/patients"}
+          href={"/home/patients"}
           className="flex flex-col items-center justify-center gap-4 shadow-lg p-8"
         >
           <Image
@@ -42,7 +42,7 @@ export default function page() {
           </h3>
         </Link>
         <Link
-          href={"/guidlines"}
+          href={"/home/guidlines"}
           className="flex flex-col items-center justify-center gap-4 shadow-lg p-8"
         >
           <Image
