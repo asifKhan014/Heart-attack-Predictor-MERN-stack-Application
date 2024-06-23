@@ -56,8 +56,9 @@ const Prediction = () => {
   return (
     <div className="flex flex-col min-h-screen justify-center items-center bg-cover bg-center bg-custom-bg2">
       <div className="w-full flex items-center  ">
-        <Link href={'/home'}  className="hover:text-blue-300">
-        <HomeModernIcon className="w-8 h-8 ml-8" />
+        <Link href={"/home"} className="hover:text-blue-300">
+          {/* <HomeModernIcon /> */}
+          <HomeIcon className="w-9 h-9 ml-8" />
         </Link>
         <div className="w-full text-center">
           <h1 className="text-4xl text-white font-bold py-4">
